@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find top Real Estate Agents in your Area ~ EliteAgentCo.</title>
+    <link rel="stylesheet" href="./assets/src/css/style.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-557HRRC');</script>
+    <!-- End Google Tag Manager -->
+    <!-- GSAP Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/css/owl.theme.default.min.css">
+    <script src="./vendor/js/owl.carousel.min.js"></script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-557HRRC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+    <!--
+        NAVIGATOR
+    -->
+
+
+    <header id="header" class="header-nav header-nav-small">
+        <div class="header-nav-wrapper container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="EliteAgentCo." />
+            </a>
+            <button id="openMobileNav" type="button" class="mobile-nav" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav" class="nav">
+                <li class="nav-item"><a href="./index.html">HOME</a></li>
+                <li class="nav-item"><a href="#">ABOUT</a></li>
+                <li class="nav-item"><a href="./search.html">AGENTS</a></li>
+                <li class="nav-close">
+                    <button id="closeMobileNav" type="button" class="mobile-nav-close" onclick="closeNav()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+
+
+        <!-- 
+            TOP AGENTS
+        -->
+
+
+        <section class="top-agents">
+            <h5 class="container">Top Real Estate Agents in your area</h5>
+            <div class="cards-container">
+                <div id="cardsContainer" class="cards-container-content container"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--
+        FOOTER
+    -->
+
+    
+    <footer class="footer">
+        <div class="footer-content container">
+            <h6>Copyright 2021. <i class="far fa-copyright"></i> EliteAgentCo. All Rights Reserved</h6>
+            <div class="footer-links">
+                <a href="./privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="./terms.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/src/js/carousels.js"></script>
+    <script src="./assets/src/js/main.js"></script>
+    <script>
+        const agents = [
+            {
+                id: 0,
+                name: "Craig",
+                agency: "Keller Williams",
+                picturePath: "./assets/images/agents/craig.png",
+                stars: 5.0,
+                reviews: 81,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "9"
+                    },
+                    {
+                        info: "Last 12 Months Sales",
+                        value: "28"
+                    },
+                    {
+                        info: "Average Price Point",
+                        value: "$302K"
+                    }
+                ],
+                testimonials: [
+                    "Craig & Kendra listed our home just before the Covid pandemic began. Despite the initial slowing of the housing market, The Spicer Group remained positive in their approach to marketing our home and helped guide us throughout the process.  Despite many disappointing months with a house on the market and no offers, Craig remained upbeat, professional & well prepared for every interaction with us. I trusted his expertise & his judgement and am very pleased with the results.  I highly recommend The Spicer Group.",
+                    
+                    "Craig was super laid back and easy to work with! He checked in on me when he hadn't heard from me and made sure all my questions were answered. Zero pressure and was happy to hike around pretty remote lots with me.",
+
+                    "Working with craig was a dream. With no experience buying a home he walked me through the whole process with detailed explanation. Cross checked other homes in the area to make sure I was getting a fair deal and lined up every inspection available to assure the home was safe and would last the test of time. He shared his concerns and eased my worries from property to property until we found one best suited for my needs and wants. Plan on working with the Spicer team in the future!"
+                ]
+            },
+            {
+                id: 1,
+                name: "Sandy Morris",
+                agency: "Keller Williams",
+                picturePath: "./assets/images/agents/sandy-m.jpeg",
+                stars: 4.9,
+                reviews: 70,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "15"
+                    },
+                    {
+                        info: "Last 12 Months Sales",
+                        value: "19"
+                    },
+                    {
+                        info: "Average Price Point",
+                        value: "$299K"
+                    }
+                ],
+                testimonials: [
+                    "I really couldn't imagine working with anyone else when buying our house. Sandy was absolutely AMAZING. I know I put her through the ringer with all of our complications, but she was always there when I needed her and I can't begin to explain how much I appreciate her. Thank you, Sandy, for helping find our perfect house and all of the crazy hard work that you did for us!!! Best realtor hands down??",
+                    
+                    "Sandy was very helpful with us selling our home for the first time.  The knowledge she showed us we Will share it with every person that we know and it will help them in this process of selling and buying a new home. We will be forever Grateful with the work and dedication she show us threw this process.",
+
+                    "Sandy found the perfect home for me and I couldn't be happier. I had a tight list of things that I was looking as a single, first time home buyer and Sandy did a good job of finding the perfect place for me."
+                ]
+            },
+            {
+                id: 2,
+                name: "Alex Castillo",
+                agency: "ERA Bill May Realty Co.",
+                picturePath: "./assets/images/agents/alex-castillo.jpg",
+                stars: 5.0,
+                reviews: 40,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "5"
+                    },
+                    {
+                        info: "Last 12 Months Sales",
+                        value: "12"
+                    },
+                    {
+                        info: "Average Price Point",
+                        value: "$290K"
+                    }
+                ],
+                testimonials: [
+                    "Alex was a joy to work with! As a buyer, I appreciated his attention to details, quick reply to phone calls, and, with his prior experience in construction, his help to evaluate properties."
+                ]
+            },
+            {
+                id: 3,
+                name: "Walter K.",
+                agency: "Long and Foster",
+                picturePath: "./assets/images/agents/walter-k.png",
+                stars: 5.0,
+                reviews: 20,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "3"
+                    },
+                    {
+                        info: "Last 12 Months Sales",
+                        value: "26"
+                    },
+                    {
+                        info: "Average Price Point",
+                        value: "$281K"
+                    }
+                ],
+                testimonials: [
+                    "Very prompt in answering questions that came up within the month long process it took to close. Usually responses to key concerns were answered within a hour through a text message or email.",
+                    
+                    "Best. Realtor. Ever. Walt is without a doubt the best realtor we have ever dealt with. He always responds to texts and emails. Goes out of his way to get you answers and works well with everyone he comes into contact with. He is calm and reassuring, which helped calm me when things were taking so long for my closing. We will never use another realtor.",
+
+                    "Walter is a phenomenal realtor. We couldn’t have asked for a better experience selling our home. Walter has a great understanding of the market, he quickly answered phone calls and emails, and truly made our experience as stress free as possible. Highly recommend!"
+                ]
+            },
+            {
+                id: 4,
+                name: "Emily Pace",
+                agency: "ERA Bill May Realty Co.",
+                picturePath: "./assets/images/agents/emily-p.jpg",
+                stars: 5.0,
+                reviews: 38,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "8"
+                    },
+                    {
+                        info: "Last 12 Months Sales",
+                        value: "23"
+                    },
+                    {
+                        info: "Average Price Point",
+                        value: "$310K"
+                    }
+                ],
+                testimonials: [
+                    "I highly recommend using Emily Pace for all your real estate needs! I was a first time home seller with some out of the ordinary circumstances and Emily walked me through each part of the process and ensured I not only understood each step, but also got the best results! She is professional, efficient, and extremely timely with great communication! I highly recommend her services!",
+
+                    "Emily Pace did a brilliant job as our realtor when we purchased our house.  She was very proactive, responsive and attended to every detail in the transaction quickly, answering our questions and guiding us though the house buying process.  She has an exhaustive knowledge of the ins and outs of house buying and selling, as well as of the local area.  We were so fortunate to have found her, and my wife recommend her services most highly! Thank you, Emily!!!",
+
+                    "We had an excellent experience with Emily Pace.   She was always available, very professional and knowledgeable about the market.  I would highly recommend Emily Pace for any real estate needs."
+                ]
+            },
+            {
+                id: 5,
+                name: "Lisa Lyons",
+                agency: "Loring Woodriff Real Estate Assoc.",
+                picturePath: "./assets/images/agents/lisa-lyons.jpg",
+                stars: 5.0,
+                reviews: 6,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "16"
+                    },
+                    {
+                        info: "Average Price Point",
+                        value: "$301K"
+                    }
+                ],
+                testimonials: [
+                    "Lisa did a PHENOMENAL job getting our house on the books and SOLD within a week! Amazing, dedicated work and I highly recommend her to anyone. Lisa made our sales & purchasing such an easy process.",
+                    
+                    "Lisa Lyons understands the real estate business.  We find her to be most professional, supportive, and up-to-date.  She's a joy to work with.  We are still working with her, in fact, as she has listed our condo, currently on sale here in Charlottesville.",
+
+                    "Great real estate agent!  Lisa understood the type of home we wanted; our budget; and overall, everything we wanted in a home.  We would use Lisa again to purchase a home!"
+                ]
+            },
+            {
+                id: 6,
+                name: "Erin G.",
+                agency: "Loring Woodriff Real Estate Assoc.",
+                picturePath: "./assets/images/agents/erin-g.jpg",
+                stars: 5.0,
+                reviews: 11,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "15"
+                    }
+                ],
+                testimonials: [
+                    "Erin helped us find our new home very quickly just prior to the start of all the shutdowns related to the pandemic, identifying homes that we would be interested in and helping set up prompt visits to promising candidates. She provided extensive information up front on what the home-buying process looked like (which was useful to us as first time homebuyers), and made sure that we were comfortable with what was going on at each step. She provided helpful lists of resources for various stages of the process and served as an excellent go-between when we needed help negotiating with the seller.",
+
+                    "We absolutely loved working with Erin as our realtor. She was very professional and really helped us understand what we were looking for in a house and how to spot red flags as we looked around at various options. We ended up buying a house that we absolutely love in a neighborhood that suits us perfectly and Erin helped us through the process every step of the way - we are first time homebuyers, so that meant the world to us!",
+
+                    "If you want a warm and caring realtor who goes above and beyond their job description, then Erin Garcia is the best choice in the greater Charlottesville area. My wife and I were first time homebuyers in Charlottesville and consulted Erin beginning in December 2019. She patiently explained all of the steps of the home-buying process and helped us begin searching. When the pandemic shut down the area in mid-March, she continued to set up appointments quickly for the homes that we wanted to see, ensuring that everyone involved felt safe. Even after we purchased our home, she took time to answer our questions. We strongly recommend working with Erin!"
+                ]
+            },
+            {
+                id: 7,
+                name: "Lori K.",
+                agency: "Nest Realty",
+                picturePath: "./assets/images/agents/lori-k.jpg",
+                stars: 5.0,
+                reviews: 36,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "16"
+                    }
+                ],
+                testimonials: [
+                    "Lori is available anytime we need to ask questions and always has answers if not is willing to go the extra mile to find them. She is truly interested in our best interests. She is SUCH an asset to Nest Reality. We have trusted her with the sale of one home (my mother’s), purchase of another (my son’s) and the sale of our home and purchase of a larger home! What a wonderful, trustworthy person she is! I can not say enough wonderful things about her!",
+                    
+                    "Lori was referred to us by a family member, and I’m glad to say Our experience with Her was wonderful! We loved having her as our realtor!! We were grateful to have found Her, as this was our first time buying a house, we had so many questions and thankfully she had answers and was always quick to answer them. She was also flexible with our schedule and was able to get us into showings. She never rushed us into taking just any house she was very patient and always gave us her advice. She made the process easy and very very enjoyable.",
+
+                    "Working with Lori was a wonderful experience! She helped us in selling our old house and buying our new house. Lori’s professional knowledge and experience was evident in each step of the process. We never felt stressed or unsure of what to do because Lori kept us up to date and did most of the work behind the scenes for us. Even when we lost offers on our home sale, Lori had a positive and proactive game plan to ensure the best possible outcome for us. In the end we were able to secure a buyer for our old home and purchase our dream home.  We are so thankful to have a realtor that really cares about us and whose passion and expertise in real estate allows her to give her clients the best experience!"
+                ]
+            },
+            {
+                id: 8,
+                name: "Geoff H.",
+                agency: "Keller Williams",
+                picturePath: "./assets/images/agents/geoff-h.jpg",
+                stars: 5.0,
+                reviews: 50,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "4"
+                    }
+                ],
+                testimonials: [
+                    "Geoff absolutely went above and beyond. He was patient and knowledgeable while we looked at houses. When we decided to go with a builder he guided us through the long process of picking out interior selections, and worked with the builder to correct (at times significant) mistakes. When the buyer of our house proved to be difficult he smoothed over all problems, allowing us to move out a bit earlier than expected. He got us a great price for the house we sold and made what would have been an extremely stressful process as smooth as possible. I cannot recommend him enough."
+                ]
+            },
+            {
+                id: 9,
+                name: "Shannon H.",
+                agency: "Blue Ridge Fine Properties",
+                picturePath: "./assets/images/agents/shannon-h.jpeg",
+                stars: 5.0,
+                reviews: 56,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "16"
+                    }
+                ],
+                testimonials: [
+                    "A former realtor in Richmond messaged me recommending we reached out to Shannon with our Staunton real estate needs and I'm so glad we did! Shannon is knowledgeable, kind, thorough and a true pleasure to work with. She guided us from hours away while we sold out first home in Virginia. She managed to provide us with a smooth, efficient sale with multiple offers. Shannon made what could have been very stressful process into an exciting, enjoyable and profitable experience. I would recommend her to anyone looking to sell or buy in the Valley.",
+                    
+                    "Shinings patience is outstanding. From having to travel to see the same properties several times to what turned out to be a financing nightmare Shining was steadfast, professional, and dependable. She went above and beyond all expectations. I can't reccomend her highly enough.",
+
+                    "I live abroad, and I was really worried about what it would be like trying to sell my house from another country. I shouldn't have worried. Despite a 12 hour time difference and limited abilities to communicate via phone, Shannon made my experience so easy! Communication was never a problem. I had a lot of questions and stress, but she answered everything and stayed on top of giving me information so I didn't have to worry. Shannon even went above and beyond: she helped coordinate the installation of new appliances and liaised with contractors to paint and fix small problems since I could not be there in person. I honestly cannot say enough positive things about my experience with Shannon. At the end of the day, I am so pleased with how everything turned out, and I would recommend Shannon to ANYONE needing assistance with selling or buying a home."
+                ]
+            },
+            {
+                id: 10,
+                name: "Gary P.",
+                agency: "Town Realty",
+                picturePath: "./assets/images/agents/gary-p.jpg",
+                stars: 5.0,
+                reviews: 49,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "6"
+                    }
+                ],
+                testimonials: [
+                    "Patient, not pushy. Respectful and always available . Ashley showed us multiple properties before we were able to focus on one that we found on ourselves. She would show up and join us so promptly. My daughter found that she was a great negotiator on any issues that came up. Ashley always had an answer to every questions. Everything ran as planned from day 1. There was no surprise or hidden demons...Thank you for all your great help! Blessings!",
+
+                    "Hola estuvimos muy satisfechos con johan torres, estuvieron pendientes en cada detalle y su ayuda fue esencial, incluso su ayuda al vender nuestra casa fue extraordinaria , quedamos muy satisfechos con sus atenciones a todo momento y cualquier duda estuvieron al pendiente ., sobrepasaron nuestras expectativas . lo recomendamos ampliamente y muchas gracias por tu ayuda.",
+
+                    "Johan Torres hizo un ecxelente y gran trabajo en el proseso de compra de nuestra casa , nos ayudA? paso a paso con Mucha amabilidad hasta encontrar la casa ideal para mi y mi familia , Johan Es muy amable ,responsable ,honesto ,muy experto y muy amigable ! Muchas gracias!"
+                ]
+            },
+            {
+                id: 11,
+                name: "Paul M.",
+                agency: "Montague, Miller & Co REALTORS",
+                picturePath: "./assets/images/agents/paul-m.jpg",
+                stars: 5.0,
+                reviews: 1,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "8"
+                    }
+                ],
+                testimonials: [
+                    "Paul was incredible! He worked out of the box of previous agents and sold my property in less time than expected and for a better settlement than expected. It was in weekly contact with me with updates and forecasts for what to expect that week, what he was doing to meet market changes, and how last week actually went compared to forecast. Can't say enough about him and his firm!"
+                ]
+            },
+            {
+                id: 12,
+                name: "Francesca",
+                agency: "Four Seasons Realty I LLC",
+                picturePath: "./assets/images/agents/francesca.jpeg",
+                stars: 5.0,
+                reviews: 49,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "17"
+                    }
+                ],
+                testimonials: [
+                    "Francesca San Giorgio is the best realtor you will find. Anywhere! She is honest, friendly and knowledgeable. She does a detailed market analysis on your property, and gives you honest representation of what your property is worth. Francesca goes above and beyond what any realtor has ever done for us, or for anyone I know, who has hired her as a realtor. She will offer advice on staging and has swept or cleaned, dusted and moved or removed things in our home to help our home present beautifully for prospective buyers. She responds quickly and answers any and all questions, no matter what time of day or night. With Francescas dedication and generosity, we listed, sold and packed and closed on our house in under 60 days. I highly recommend her. You will not find anyone better, with more integrity or expertise, to help you buy or sell a home.",
+
+                    "Selling our condo in Wintergreen was very easy with the help with Francesca! I would highly recommend her in selling any property. She was very knowledgeable about the market price and was always available for updates. She sold our condo very quickly!",
+
+                    "We had a wonderful experience form the beginning-to-end with Alan and Francesca as our buyers agent. Alan was knowledgable, honest, hard working, quick to respond, and always had the positive energy. Alan negotiated flawlessly for us and got us the price we were looking for. He was on top of the application process and made it very efficient and speedy for us. He communicated well not only with us, but also with all other parties that are involved in the process. We would highly recommend Alan and Francesca as a real estate agent to anyone looking to buy or sell their home. Thank you Alan and Francesca!"
+                ]
+            },
+            {
+                id: 13,
+                name: "Denise R.",
+                agency: "Long and Foster",
+                picturePath: "./assets/images/agents/denise-r.jpeg",
+                stars: 5.0,
+                reviews: 51,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "15"
+                    }
+                ],
+                testimonials: [
+                    "Denise is high energy. That means she looks at everything. She is skilled at home selling and buying. She was exceptional at pricing our home to sell and finding the home that we wanted in a very hot market. Her team handles all the stuff that makes the process easy, not having to deal with a problem is something that makes buying a home a pleasure. Compared to our previous home selling and buying this experience of selling and buying was so easy that I thought it was just too easy and something was going to go wrong but this team is amazing. Knowledge of market, expertise in legal process, updates in process,availability for questions, all meant to us piece of mind. Thank you Denise.",
+
+                    "To say Tony was a great realtor is an understatement. He was very knowledgeable and took what we wanted from are first home and actually found us homes that fit the requirements we had. He was always quick to respond, and followed thru throughout the buying process. We looked at total of 3 homes and out of those choose are dream home. I watch HGTV a lot and see that most of the time couples don't find a home that quick. If your looking for a hardworking friendly realtor look no farther, I know that you will not be disappointed.",
+
+                    "We had a wonderful experience with Ricky. We appreciated the advice he provided. In past real estate experiences, the realtors we worked with hesitated to provide us with advice, which left us feeling unsure. But Ricky provided us with our options and what he would do in the situation and we never regretted our decision! We're happy with our home and happy we had Ricky on our team to assist us with our purchase!",
+                ]
+            },
+            {
+                id: 14,
+                name: "Tara S.",
+                agency: "Keller Williams",
+                picturePath: "./assets/images/agents/tara-s.jpeg",
+                stars: 5.0,
+                reviews: 36,
+                details: [
+                    {
+                        info: "Years Of Experience",
+                        value: "24"
+                    }
+                ],
+                testimonials: [
+                    "Tara is an extremely knowledgeable realtor and knows Charlottesville inside and out! When it came to listing our unique property, she provided us with a detailed analysis explaining how she arrived at a reasonable and fair listing price. Due to Taras superb negotiating skills and extensive real estate background, our price was met. Both Tara and Colleen responded to our emails promptly and provided sound advice throughout the selling process, which proved to be invaluable. We highly recommend Savage and Company for your real estate needs.",
+
+                    "Tara is more than a realtor she is a partner in your real estate transaction. She thinks outside of the box and is a master at navigating complicated transactions. Her depth of knowledge of the local area and her extensive knowledge of the real estate industry make her the person to have on your team when you go to make the largest investments of your life.",
+
+                    "Tara is the most knowledgeable realtor Ive ever worked with. She is on top of everything and made sure things went well. I would recommend Tara to anyone looking for the home of their dreams."
+                ]
+            }
+        ];
+
+        function createAgentCard(agent) {
+            let card = document.createElement("div");
+            card.className = "card agent-card";
+
+            let cardContent = document.createElement("div");
+            cardContent.className = "card-content agent-card-content";
+
+            let contactButton = document.createElement("button");
+            contactButton.type = "button";
+            contactButton.className = "agent-card-button";
+            contactButton.dataset.id = agent.id;
+            contactButton.setAttribute("onclick", "openModalForm(event)");
+            contactButton.textContent = "Contact Agent";
+
+            card.appendChild(cardContent);
+            card.appendChild(contactButton);
+
+            let cardHeader = document.createElement("div");
+            cardHeader.className = "agent-card-header";
+
+            let cardPicture = document.createElement("div");
+            cardPicture.className = "agent-card-picture";
+
+            let agentPicture = document.createElement("img");
+            agentPicture.src = agent.picturePath;
+            agentPicture.alt = agent.name;
+
+            cardPicture.appendChild(agentPicture);
+
+            let cardInfo = document.createElement("div");
+            cardInfo.className = "agent-card-info";
+
+            let agentName = document.createElement("p");
+            agentName.className = "agent-name";
+            agentName.textContent = agent.name;
+
+            let agentAgency = document.createElement("p");
+            agentAgency.className = "agent-agency";
+            agentAgency.textContent = agent.agency;
+
+            cardInfo.appendChild(agentName);
+            cardInfo.appendChild(agentAgency);
+
+            cardHeader.appendChild(cardPicture);
+            cardHeader.appendChild(cardInfo);
+            
+            let cardStars = document.createElement("div");
+            cardStars.className = "agent-card-stars";
+
+            for (let i = 0; i < agent.stars; i++) {
+                let star = document.createElement("i");
+                star.className = "fas fa-star";
+
+                cardStars.appendChild(star);
+            }
+
+            if (cardStars.childElementCount < 5) {
+                let emptyStars = 5 - agent.stars;
+                if (agent.stars !== parseInt(agent.stars)) {
+                    emptyStars--;
+                }
+
+                for (let i = 0; i < emptyStars; i++) {
+                    let emptyStar = document.createElement("i");
+                    emptyStar.className = "far fa-star";
+
+                    cardStars.appendChild(emptyStar);
+                }
+            }
+
+            let starNumber = document.createElement("p");
+            starNumber.className = "agent-star-number";
+            starNumber.textContent = parseFloat(agent.stars).toFixed(1);
+
+            let reviews = document.createElement("p");
+            reviews.className = "agent-review-number";
+            reviews.textContent = "(" + agent.reviews + ")";
+
+            cardStars.appendChild(starNumber);
+            cardStars.appendChild(reviews);
+
+            let cardDetails = document.createElement("div");
+            cardDetails.className = "agent-card-details";
+
+            for (let i = 0; i < agent.details.length; i++) {
+                let agentDetail = document.createElement("div");
+                agentDetail.className = "agent-details-item";
+
+                let value = document.createElement("p");
+                value.textContent = agent.details[i].value;
+
+                let info = document.createElement("p");
+                info.textContent = agent.details[i].info;
+
+                agentDetail.appendChild(value);
+                agentDetail.appendChild(info);
+
+                cardDetails.appendChild(agentDetail);
+            }
+
+            let carousel = document.createElement("div");
+            carousel.className = "owl-carousel agent-card-testimonials agent-card-testimonials-carousel";
+
+            for (let i = 0; i < agent.testimonials.length; i++) {
+                let testimonial = document.createElement("div");
+                testimonial.className = "agent-testimonials-item";
+
+                let p = document.createElement("p");
+                p.textContent = agent.testimonials[i];
+
+                testimonial.appendChild(p);
+
+                carousel.appendChild(testimonial);
+            }
+
+            cardContent.appendChild(cardHeader);
+            cardContent.appendChild(cardStars);
+            cardContent.appendChild(cardDetails);
+            cardContent.appendChild(carousel);
+
+            return card;
+        }
+        
+        function printAgents(agents) {
+            let cardsContainer = document.getElementById("cardsContainer");
+
+            for (let i = 0; i < agents.length; i++) {
+                let card = createAgentCard(agents[i]);
+                cardsContainer.appendChild(card);
+
+                if (i === agents.length - 1) {
+                    const cards = document.querySelectorAll(".agent-card");
+            
+                    setTimeout(function() {
+                        ellipsizeTextBox();
+                        for (let i = 0; i < cards.length; i++) {
+                            cards[i].classList.add("show");
+                        }
+                    }, 300);
+                }
+            }
+        }
+
+        function createModal() {
+            const modalTemplate = `
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <button id="closeModal" type="button" class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            `;
+
+            const modal = createElementFromString(modalTemplate);
+
+            return modal;
+        }
+
+        function createAgentModal(id, agents) {
+            let agentModal = createModal();
+
+            let agent = agents[id];
+
+            const agentModalContentTemplate = `
+            <div class="contact-agent-modal-content">
+                <div class="agent-modal-info">
+                    <img id="agentImage" src="${agent.picturePath}" alt="${agent.name}" />
+                    <p class="agentName agent-name">${agent.name}</p>
+                </div>
+                <form id="agentForm" data-agent-id="${id}" class="agent-modal-form" onsubmit="submitAgentForm(event)">
+                    <input type="text" id="agentId" name="agentId" hidden value="${id}" />
+                    <input type="text" id="agentName" name="agentName" hidden value="${agent.name}" />
+                    <input type="text" id="agentAgency" name="agentAgency" hidden value="${agent.agency}" />
+                    <div class="step-1 active">
+                        <p class="step-title">What would you like to ask <span class="agentName">${agent.name}</span>?</p>
+                        <label class="input-wrapper">
+                            <textarea class="input-default" name="comment" id="comment" rows="10" placeholder="Hello ${agent.name}, I am looking for a real estate agent to sell my house. We have to move in 2 weeks, so I am looking for a quick turnaround. Can you help me?"></textarea>
+                            <span class="form-error"></span>
+                        </label>
+                        <div class="modal-button-wrapper">
+                            <button type="button" class="nextStep next-step" onclick="agentModalStepChange(event)">Next</button>
+                        </div>
+                    </div>
+                    <div class="step-2">
+                        <p class="step-title">Are you looking to buy or sell a property?</p>
+                        <div class="radio-wrapper">
+                            <label class="radio-container styled-radio">
+                                <input type="radio" name="action" value="buying" hidden checked onchange="agentModalActionChange(event)" />
+                                <span class="helper"></span>
+                                Buying
+                            </label>
+                            <label class="radio-container styled-radio">
+                                <input type="radio" name="action" value="selling" hidden onchange="agentModalActionChange(event)" />
+                                <span class="helper"></span>
+                                Selling
+                            </label>
+                        </div>
+                        <div class="buying active">
+                            <label class="input-wrapper" for="location">Where are you looking?
+                                <input class="input-default" type="text" id="location" name="location" placeholder="City or Zip Code" />
+                                <span class="form-error"></span>
+                            </label>
+                        </div>
+                        <div class="selling">
+                            <div class="step-2-input-grid">
+                                <label class="input-wrapper" for="address">Address
+                                    <input class="input-default" type="text" id="address" name="address" placeholder="Street" />
+                                    <span class="form-error"></span>
+                                </label>
+                                <label class="input-wrapper" for="unit">Unit #
+                                    <input class="input-default" type="text" id="unit" name="unit" placeholder="Unit" />
+                                    <span class="form-error"></span>
+                                </label>
+                                <label class="input-wrapper" for="city">City
+                                    <input class="input-default" type="text" id="city" name="city" placeholder="City" />
+                                    <span class="form-error"></span>
+                                </label>
+                                <label class="input-wrapper" for="state">State
+                                    <input class="input-default" type="text" id="state" name="state" placeholder="State" />
+                                    <span class="form-error"></span>
+                                </label>
+                                <label class="input-wrapper" for="zip">Zip
+                                    <input class="input-default" type="text" id="zip" name="zip" placeholder="Zip" maxlength="6" onkeydown="onlyNumbers(event)" />
+                                    <span class="form-error"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-button-wrapper">
+                            <button type="button" class="prevStep prev-step" onclick="agentModalStepChange(event)">Previous</button>
+                            <button type="button" class="nextStep next-step" onclick="agentModalStepChange(event)">Next</button>
+                        </div>
+                    </div>
+                    <div class="step-3">
+                        <p class="step-title">How can <span class="agentName"></span> get back to you?</p>
+                        <div class="step-3-input-grid">
+                            <label class="input-wrapper" for="firstName">
+                                <input class="input-default" type="text" id="firstName" name="firstName" placeholder="First Name" />
+                                <span class="form-error"></span>
+                            </label>
+                            <label class="input-wrapper" for="lastName">
+                                <input class="input-default" type="text" id="lastName" name="lastName" placeholder="Last Name" />
+                                <span class="form-error"></span>
+                            </label>
+                            <label class="input-wrapper" for="email">
+                                <input class="input-default" type="email" id="email" name="email" placeholder="Email Address" />
+                                <span class="form-error"></span>
+                            </label>
+                            <label class="input-wrapper" for="tel">
+                                <input class="input-default" type="text" id="tel" name="tel" placeholder="Phone Number"  onkeydown="onlyNumbers(event)" />
+                                <span class="form-error"></span>
+                            </label>
+                        </div>
+                        <div class="modal-button-wrapper">
+                            <button type="button" class="prevStep prev-step" onclick="agentModalStepChange(event)">Previous</button>
+                            <button id="sendMessage" type="submit" class="next-step">Send Message</button>
+                        </div>
+                    </div>
+                    <div id="formAlert" class="alert-icon hidden">
+                        <div class="alert-icon-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="alert-icon-body">
+                            <p id="formAlertText" class="alert-icon-text"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            `;
+
+            let agentModalContent = createElementFromString(agentModalContentTemplate);
+
+            agentModal.firstElementChild.appendChild(agentModalContent);
+
+            return agentModal;
+        }
+
+        function openModalForm(e) {
+            const agentModal = createAgentModal(e.target.dataset.id, agents);
+            document.body.appendChild(agentModal);
+            
+            const modalContent = agentModal.firstElementChild;
+
+            document.body.classList.add("overflow-hidden");
+
+            const timeline = gsap.timeline();
+
+            timeline.fromTo(modalContent, 0.8, { y: "-100vh" }, { y: 0, ease: Power2.easeOut });
+        }
+
+        function closeModal() {
+            const button = document.getElementById("closeModal");
+            
+            const modalContent = button.parentElement;
+
+            const timeline = gsap.timeline();
+
+            timeline.to(modalContent, 0.6, { y: "-100vh", ease: Power1.easeIn })
+            .add(function() {
+                const modal = document.getElementById("modal");
+                
+                modal.parentElement.removeChild(modal);
+
+                document.body.classList.remove("overflow-hidden");
+            });
+        }
+
+        function agentModalStepChange(e) {
+            const button = e.target;
+            const step = button.parentElement.parentElement;
+
+            if (validateModalInputs(button)) {
+                if (e.target.classList.contains("nextStep")) {
+                    step.classList.remove("active");
+                    step.nextElementSibling.classList.add("active");
+
+                    let inputs = document.querySelectorAll(".input-error");
+                    let errors = document.querySelectorAll(".form-error");
+
+                    for (let i = 0; i < inputs.length; i++) {
+                        inputs[i].classList.remove("input-error");
+                    }
+
+                    for (let i = 0; i < errors.length; i++) {
+                        errors[i].textContent = "";
+                    }
+                }
+            }
+            if (e.target.classList.contains("prevStep")) {
+                step.classList.remove("active");
+                step.previousElementSibling.classList.add("active");
+            }
+        }
+
+        function agentModalActionChange(e) {
+            const input = e.target;
+            const step = input.parentElement.parentElement.parentElement;
+
+            const currentActive = step.querySelector(".active");
+            currentActive.classList.remove("active");
+            
+            const newActive = step.querySelector("." + input.value);
+            newActive.classList.add("active");
+        }
+
+        function validateModalInputs(b) {
+            let flag = true;
+
+            const step = b.parentElement.parentElement;
+
+            let inputs = step.querySelectorAll('input[type="text"], textarea, input[type="email"]');
+
+            if (step.classList.contains("step-2")) {
+                const activeBox = step.querySelector(".active");
+
+                inputs = activeBox.querySelectorAll('input[type="text"], textarea, input[type="email"]')
+            }
+
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.length < 1) {
+                    inputs[i].classList.add("input-error");
+
+                    let error = inputs[i].nextElementSibling;
+                    error.textContent = "This field is required.";
+                    
+                    flag = false;
+                } else {
+                    inputs[i].classList.remove("input-error");
+
+                    let error = inputs[i].nextElementSibling;
+                    error.textContent = "";
+                }
+            }
+
+            return flag;
+        }
+
+        function submitAgentForm(e) {
+            e.preventDefault();
+            const form = e.target;
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            if (validateModalInputs(submitButton)) {
+                document.getElementById("sendMessage").disabled = true;
+                $.ajax({
+                    url: "./contact.php",
+                    type: "POST",
+                    data: $("form").serialize(),
+                    success: function (response) {
+                        let alert = document.getElementById("formAlert");
+                        let alertText = document.getElementById("formAlertText");
+                        alert.classList.remove("hidden");
+
+                        if (response.includes("Success")){
+                            alert.classList.add("alert-success");
+                            alertText.innerHTML = "<strong>Success!</strong> We have received your inquiry and will get in touch with you soon.";
+                        } else {
+                            alert.classList.add("alert-danger");
+                            alertText.innerHTML = "<strong>Error!</strong> There was an error submitting your inquiry. Please try again later.";
+                        }
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert("There was an error processing your contact form. Please, try again later.");
+                        if (xhr.status == 200) {
+                            console.log(ajaxOptions);
+                        } else {
+                            console.log(xhr.status);
+                            console.log(thrownError);
+                        }
+                    },
+                });
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function(e) {
+            window.onresize = function() {
+                // Close Mobile Nav on window resize
+                const nav = document.getElementById("nav");
+                nav.classList.remove("active");
+        
+                nav.style.height = "60px";
+            }
+
+            printAgents(agents);
+        });
+    </script>
+</body>
+</html>
